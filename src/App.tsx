@@ -401,6 +401,13 @@ const MEMORY_VIDEO_FRAMES = [
   "/images/18.png",
   "/images/19.png",
   "/images/20.png",
+  "/images/22.png",
+  "/images/23.png",
+  "/images/24.png",
+  '/images/25.png',
+  '/images/26.png',
+  '/images/27.png',
+  '/images/28.png'
 ];
 
 const AIStoryVideo = () => {
@@ -440,7 +447,7 @@ const AIStoryVideo = () => {
               key={MEMORY_VIDEO_FRAMES[currentIndex]}
               src={MEMORY_VIDEO_FRAMES[currentIndex]}
               alt={`Memory frame ${currentIndex + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               initial={{ opacity: 0, scale: 1.08 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 1.03 }}
